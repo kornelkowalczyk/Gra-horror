@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://b711howcabd25"]
+
+[ext_resource type="PackedScene" uid="uid://dnj6k1drpvxj6" path="res://materaily/szfka.tscn" id="1_66c1f"]
+[ext_resource type="PackedScene" uid="uid://cw2ogntj0ysx6" path="res://materaily/tablica.tscn" id="2_owprh"]
+
+[node name="szafki" type="Node3D"]
+
+[node name="szafka" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 11.9252, 0.132561, 0.887416)
+
+[node name="szafka2" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 11.4917, 0.132561, 0.887416)
+
+[node name="szafka3" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 11.0525, 0.132561, 0.887416)
+
+[node name="szafka4" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 10.6313, 0.132561, 0.887416)
+
+[node name="szafka5" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 10.6313, 0.971408, 0.887416)
+
+[node name="szafka6" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 11.0326, 0.971408, 0.887416)
+
+[node name="szafka7" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 11.4775, 0.971408, 0.887416)
+
+[node name="szafka8" parent="." instance=ExtResource("1_66c1f")]
+transform = Transform3D(-1.87959e-08, 0, 0.43, 0, 0.43, 0, -0.43, 0, -1.87959e-08, 11.9084, 0.971408, 0.887416)
+
+[node name="tablica" parent="." instance=ExtResource("2_owprh")]
+transform = Transform3D(0.485, 0, 0, 0, 0.485, 0, 0, 0, 0.485, 8.90427, 1.06993, -8.31931)

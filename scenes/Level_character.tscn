@@ -1,0 +1,194 @@
+[gd_scene load_steps=21 format=3 uid="uid://6hn8imvqyb0e"]
+
+[ext_resource type="Script" uid="uid://xbak67yx7sx2" path="res://character.gd" id="1_kh5mw"]
+[ext_resource type="Texture2D" uid="uid://bh1nnt8ofcwym" path="res://scenes/crosshair002.png" id="2_2owxg"]
+[ext_resource type="Script" uid="uid://d0qsnair5mxyh" path="res://scenes/ray_cast_3d.gd" id="3_f6fmv"]
+[ext_resource type="Texture2D" uid="uid://euvbygawmmd4" path="res://scenes/t_flashlightpattern.png" id="4_l6qmj"]
+[ext_resource type="Script" uid="uid://cqccmjuu1l8gn" path="res://scenes/spot_light_3d.gd" id="5_kh5mw"]
+[ext_resource type="Texture2D" uid="uid://bb7fy6idfbu4n" path="res://scenes/bateriapusta.png" id="6_f1i25"]
+[ext_resource type="AudioStream" uid="uid://vobj8jj5mfbo" path="res://scenes/walking_sound.mp3" id="6_t4pxt"]
+[ext_resource type="Script" uid="uid://ca54tb7jo4odi" path="res://scenes/flashlight_bar.gd" id="7_0qwcr"]
+[ext_resource type="Script" uid="uid://dfg8jpj5ndsm0" path="res://scenes/walking_sound.gd" id="7_f1i25"]
+[ext_resource type="MeshLibrary" uid="uid://lyyfopp0qrpc" path="res://biblio_mesh.tres" id="8_0qwcr"]
+[ext_resource type="Texture2D" uid="uid://cxdn7g1l5yo7c" path="res://scenes/sprint0.png" id="8_44l5h"]
+[ext_resource type="Script" uid="uid://ng37mgbk6akw" path="res://scenes/test_audio_button.gd" id="9_44l5h"]
+[ext_resource type="Texture2D" uid="uid://bejbbok2oeqil" path="res://scenes/sprintpelny.png" id="9_gb8wx"]
+[ext_resource type="AudioStream" uid="uid://batarbii3fki4" path="res://scenes/AAA1.mp3" id="10_gb8wx"]
+
+[sub_resource type="Environment" id="Environment_b121j"]
+background_mode = 2
+glow_normalized = true
+glow_intensity = 1.39
+glow_mix = 0.313
+glow_bloom = 1.0
+glow_blend_mode = 4
+fog_enabled = true
+fog_depth_end = 978.4
+volumetric_fog_enabled = true
+volumetric_fog_ambient_inject = 6.55
+volumetric_fog_sky_affect = 0.406
+volumetric_fog_temporal_reprojection_amount = 0.69
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_agfs1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b121j"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_agfs1"]
+radius = 1.0
+height = 4.0
+
+[sub_resource type="PrismMesh" id="PrismMesh_klq6b"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_olg7q"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.0146517, 0.470697, 0.470697, 0.0735213, 0.352957, 0.47061, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.0146517, 0.470697, -0.470697, 0.5, -0.5, 0.5, -0.0146517, 0.470697, 0.470697, 0.0146517, 0.470697, -0.470697)
+
+[node name="Level_character" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.979698, 0.195266, 0.0454218, 0.163822, -0.910342, 0.380054, 0.115561, -0.364897, -0.923849, 1.40546, 5.04406, -30.9402)
+light_energy = 0.0
+light_indirect_energy = 0.0
+shadow_bias = 3.635
+shadow_transmittance_bias = -9.001
+shadow_opacity = 0.77
+shadow_blur = 0.798
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_b121j")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(0.376567, 0, 0.134898, 0, 0.4, 0, -0.134898, 0, 0.376567, 1.951, 1.23441, -0.493726)
+script = ExtResource("1_kh5mw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 2, 0)
+mesh = SubResource("CapsuleMesh_agfs1")
+surface_material_override/0 = SubResource("StandardMaterial3D_b121j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("CapsuleShape3D_agfs1")
+
+[node name="head" type="Node3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/head"]
+
+[node name="TextureRect" type="TextureRect" parent="CharacterBody3D/head/Camera3D"]
+offset_left = 556.0
+offset_top = 304.0
+offset_right = 596.0
+offset_bottom = 344.0
+texture = ExtResource("2_2owxg")
+expand_mode = 3
+
+[node name="InteractRay" type="RayCast3D" parent="CharacterBody3D/head"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -0.572365)
+target_position = Vector3(0, 0, -4)
+script = ExtResource("3_f6fmv")
+
+[node name="Prompt" type="Label" parent="CharacterBody3D/head/InteractRay"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.5
+offset_top = -11.5
+offset_right = 54.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = " Message[key]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="hand" type="Node3D" parent="CharacterBody3D/head"]
+transform = Transform3D(4, 0, 3.57628e-07, 0, 4, 0, -3.57628e-07, 0, 4, -9.53674e-07, -0.540131, -0.927267)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CharacterBody3D/head/hand"]
+transform = Transform3D(1, 0, 2.38418e-08, 0, 1, 0, -2.38418e-08, 0, 1, 0.52772, 0, 0.199311)
+light_color = Color(0.921592, 0.857513, 0.925203, 1)
+light_energy = 5.261
+light_indirect_energy = 2.835
+light_volumetric_fog_energy = 1.646
+light_projector = ExtResource("4_l6qmj")
+light_size = 1.0
+shadow_enabled = true
+shadow_normal_bias = 0.697
+distance_fade_begin = 10.0
+spot_range = 34.531
+spot_angle = 15.0
+script = ExtResource("5_kh5mw")
+
+[node name="FlashlightBar" type="TextureProgressBar" parent="CharacterBody3D"]
+anchors_preset = -1
+anchor_left = 0.802
+anchor_top = 0.032
+anchor_right = 0.945
+anchor_bottom = 0.114
+offset_left = -43.9041
+offset_top = -17.736
+offset_right = 33.36
+offset_bottom = 24.128
+size_flags_horizontal = 15
+size_flags_vertical = 15
+size_flags_stretch_ratio = 9.25
+localize_numeral_system = false
+max_value = 500.0
+value = 500.0
+nine_patch_stretch = true
+texture_under = ExtResource("6_f1i25")
+texture_progress = ExtResource("6_f1i25")
+script = ExtResource("7_0qwcr")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CharacterBody3D"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -354.0
+offset_top = -548.0
+offset_right = 393.0
+offset_bottom = 433.0
+grow_horizontal = 2
+grow_vertical = 0
+nine_patch_stretch = true
+texture_under = ExtResource("8_44l5h")
+texture_progress = ExtResource("9_gb8wx")
+
+[node name="walking_sound" type="AudioStreamPlayer" parent="CharacterBody3D"]
+stream = ExtResource("6_t4pxt")
+volume_db = 24.0
+script = ExtResource("7_f1i25")
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("8_0qwcr")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(0, 65535, 655361, 65535, 65535, 655361, 65535, 0, 655361, 0, 0, 655361, 0, 65534, 655361, 65535, 65534, 655361, 65534, 65534, 655361, 1, 65534, 655361, 1, 65535, 655361, 1, 0, 655361, 1, 1, 655361, 0, 1, 655361, 65535, 1, 655361, 65534, 1, 655361, 65534, 0, 655361, 65534, 65535, 655361, 65534, 65533, 655361, 65535, 65533, 655361, 0, 65533, 655361, 1, 65533, 655361, 2, 65534, 655361, 2, 65533, 655361, 2, 65535, 655361, 2, 0, 655361, 2, 1, 655361, 3, 1, 655361, 3, 0, 655361, 3, 65535, 655361, 3, 65534, 655361, 3, 65533, 655361, 3, 65532, 655361, 2, 65532, 655361, 1, 65532, 655361, 0, 65532, 655361, 65535, 65532, 655361, 65534, 65532, 655361, 1, 65531, 655361, 1, 65530, 655361, 1, 65529, 655361, 1, 65528, 655361, 0, 65528, 655361, 1, 65527, 655361, 0, 65527, 655361, 0, 65529, 655361, 0, 65530, 655361, 0, 65531, 655361, 0, 65526, 655361, 0, 65525, 655361, 0, 65524, 655361, 1, 65524, 655361, 1, 65525, 655361, 1, 65526, 655361, 65534, 65523, 655361, 65535, 65523, 655361, 0, 65523, 655361, 1, 65523, 655361, 2, 65523, 655361, 3, 65523, 655361, 4, 65523, 655361, 4, 65522, 655361, 4, 65521, 655361, 4, 65520, 655361, 4, 65519, 655361, 65534, 65522, 655361, 65534, 65521, 655361, 65534, 65520, 655361, 65534, 65519, 655361, 65534, 65518, 655361, 65535, 65518, 655361, 65535, 65517, 655361, 0, 65517, 655361, 1, 65517, 655361, 2, 65517, 655361, 2, 65518, 655361, 3, 65518, 655361, 4, 65518, 655361, 3, 65517, 655361, 4, 65517, 655361, 65534, 65517, 655361, 0, 65518, 655361, 1, 65518, 655361, 1, 65519, 655361, 2, 65519, 655361, 0, 65519, 655361, 65535, 65519, 655361, 3, 65519, 655361, 3, 65520, 655361, 3, 65521, 655361, 2, 65521, 655361, 1, 65521, 655361, 0, 65520, 655361, 2, 65520, 655361, 0, 65521, 655361, 65535, 65521, 655361, 65535, 65520, 655361, 1, 65520, 655361, 0, 65522, 655361, 65535, 65522, 655361, 1, 65522, 655361, 2, 65522, 655361, 3, 65522, 655361, 65533, 65532, 1048578, 65533, 65533, 1048578, 65533, 65534, 1048578, 65533, 65535, 1048578, 65533, 0, 1048578, 65533, 1, 1048578, 65534, 2, 655362, 65535, 2, 655362, 0, 2, 655362, 1, 2, 655362, 2, 2, 655362, 3, 2, 655362, 65533, 2, 655360, 4, 2, 1441792, 4, 65531, 0, 65533, 65531, 1048576, 4, 65532, 1441794, 4, 65533, 1441794, 4, 65534, 1441794, 4, 65535, 1441794, 4, 0, 1441794, 4, 1, 1441794, 2, 65530, 1441794, 2, 65524, 1441794, 2, 65525, 1441794, 2, 65526, 1441794, 2, 65527, 1441794, 2, 65528, 1441794, 2, 65529, 1441794, 3, 65531, 2, 2, 65531, 3, 65535, 65531, 1048579, 65534, 65531, 2, 65535, 65530, 1048578, 65535, 65529, 1048578, 65535, 65528, 1048578, 65535, 65527, 1048578, 65535, 65526, 1048578, 65535, 65525, 1048578, 65535, 65524, 1048578, 65532, 65518, 1245184, 65532, 65519, 1245184, 65532, 65517, 1048576, 1, 65511, 655361, 1, 65512, 655361, 1, 65513, 655361, 1, 65514, 655361, 1, 65515, 655361, 1, 65516, 655361, 2, 65511, 655361, 2, 65512, 655361, 2, 65513, 655361, 2, 65514, 655361, 2, 65515, 655361, 2, 65516, 655361, 3, 65511, 655361, 3, 65512, 655361, 3, 65513, 655361, 3, 65514, 655361, 3, 65515, 655361, 3, 65516, 655361, 4, 65511, 655361, 4, 65512, 655361, 4, 65513, 655361, 4, 65514, 655361, 4, 65515, 655361, 4, 65516, 655361, 5, 65520, 655361, 5, 65521, 655361, 5, 65522, 655361, 6, 65520, 655361, 6, 65521, 655361, 6, 65522, 655361, 7, 65514, 655361, 7, 65515, 655361, 7, 65516, 655361, 7, 65517, 655361, 7, 65518, 655361, 7, 65519, 655361, 7, 65520, 655361, 7, 65521, 655361, 7, 65522, 655361, 8, 65514, 655361, 8, 65515, 655361, 8, 65516, 655361, 8, 65517, 655361, 8, 65518, 655361, 8, 65519, 655361, 8, 65520, 655361, 8, 65521, 655361, 8, 65522, 655361, 10, 65507, 1, 10, 65506, 1, 10, 65505, 1, 9, 65507, 1, 9, 65506, 1, 9, 65505, 1, 8, 65513, 1, 8, 65512, 1, 8, 65511, 1, 8, 65510, 1, 8, 65509, 1, 8, 65508, 1, 8, 65507, 1, 8, 65506, 1, 8, 65505, 1, 7, 65513, 1, 7, 65512, 1, 7, 65511, 1, 7, 65510, 1, 7, 65509, 1, 7, 65508, 1, 7, 65507, 1, 7, 65506, 1, 7, 65505, 1)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="test_audio_button" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.39743, 0.770624, -4.06998)
+script = ExtResource("9_44l5h")
+prompt_message = "Audio1"
+metadata/_custom_type_script = "uid://ng37mgbk6akw"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="test_audio_button"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+mesh = SubResource("PrismMesh_klq6b")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="test_audio_button"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_olg7q")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="test_audio_button"]
+stream = ExtResource("10_gb8wx")
+volume_db = -10.077
+
+[connection signal="interacted" from="test_audio_button" to="test_audio_button" method="_on_interacted"]

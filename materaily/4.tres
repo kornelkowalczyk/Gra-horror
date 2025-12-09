@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bsj5qqrblwb7i"]
+
+[ext_resource type="Texture2D" uid="uid://ddyig4rel2rgu" path="res://materaily/Bez tytułu.png" id="1_hlevy"]
+
+[resource]
+albedo_color = Color(0.489358, 0.968714, 0.284139, 1)
+albedo_texture = ExtResource("1_hlevy")
+uv1_scale = Vector3(3.04, 2.32, 2.17)
+uv1_offset = Vector3(0, -0.02, -0.365)

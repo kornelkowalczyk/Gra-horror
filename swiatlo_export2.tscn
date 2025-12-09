@@ -1,0 +1,192 @@
+[gd_scene load_steps=9 format=3 uid="uid://b3o6lsew8e427"]
+
+[ext_resource type="PackedScene" uid="uid://r0tph4hd6lty" path="res://materaily/swiatlo.tscn" id="1_b7r3w"]
+[ext_resource type="PackedScene" uid="uid://cw2ogntj0ysx6" path="res://materaily/tablica.tscn" id="2_l8ixk"]
+[ext_resource type="PackedScene" uid="uid://bmpcsitfdqdfn" path="res://materaily/table.tscn" id="3_8ocbs"]
+[ext_resource type="PackedScene" uid="uid://ycieybpu6qlt" path="res://materaily/taboret.tscn" id="4_p6qxv"]
+[ext_resource type="PackedScene" uid="uid://dniffg4kl87vp" path="res://materaily/krzeslo.tscn" id="5_4qrr7"]
+[ext_resource type="PackedScene" uid="uid://bh8mpj7eveinp" path="res://materaily/kibelxd.tscn" id="6_twm4c"]
+[ext_resource type="PackedScene" uid="uid://fddb1u76acva" path="res://materaily/lustro.tscn" id="7_v3n18"]
+[ext_resource type="PackedScene" uid="uid://l37vdvso61nq" path="res://materaily/umywalka.tscn" id="8_g103m"]
+
+[node name="swiatlo2" type="Node3D"]
+
+[node name="swiatlo2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38532, -1.63877, 0)
+
+[node name="swiatlo15" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6327, 2.54505, 3.6562)
+
+[node name="swiatlo25" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6327, 2.54505, 3.6562)
+
+[node name="swiatlo2" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9597, 2.62719, -1.28824)
+
+[node name="swiatlo3" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29601, 2.62719, -0.943492)
+
+[node name="swiatlo8" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.89374, 2.62719, 4.00947)
+
+[node name="swiatlo9" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.89374, 2.62719, 13.0996)
+
+[node name="OmniLight3D" parent="swiatlo2/swiatlo9" index="1"]
+light_energy = 0.638
+light_volumetric_fog_energy = 2.803
+light_specular = 0.5
+light_bake_mode = 2
+shadow_bias = 0.1
+shadow_normal_bias = 1.0
+omni_range = 6.813
+omni_attenuation = 2.065
+
+[node name="swiatlo10" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.45019, 2.62719, 13.0996)
+
+[node name="swiatlo11" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.85803, 2.62719, 13.0996)
+
+[node name="swiatlo12" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.85803, 2.62719, 9.85318)
+
+[node name="swiatlo13" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56136, 2.62719, 9.05971)
+
+[node name="swiatlo14" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.95272, 2.62719, 9.05971)
+
+[node name="swiatlo6" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90225, 2.62719, -7.48338)
+
+[node name="swiatlo7" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.16973, 2.62719, -6.50171)
+
+[node name="swiatlo16" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.10597, 2.62719, -11.6588)
+
+[node name="swiatlo17" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37667, 2.65939, -12.3407)
+
+[node name="swiatlo18" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65811, 2.62719, -16.2318)
+
+[node name="swiatlo23" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8929, 2.62719, -16.2318)
+
+[node name="swiatlo20" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7255, 2.62719, -7.23289)
+
+[node name="swiatlo21" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.71416, 2.62719, -8.33124)
+
+[node name="swiatlo22" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.43266, 2.62719, -1.47199)
+
+[node name="swiatlo19" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7281, 2.62719, -6.06914)
+
+[node name="swiatlo24" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7281, 2.62719, -10.7771)
+
+[node name="swiatlo5" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.96396, 2.62719, -0.943492)
+
+[node name="swiatlo" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02969, 2.54505, 3.64593)
+
+[node name="swiatlo4" parent="swiatlo2" instance=ExtResource("1_b7r3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.990998, 2.54505, 3.64593)
+
+[node name="tablica" parent="swiatlo2" instance=ExtResource("2_l8ixk")]
+transform = Transform3D(-2.79753e-08, 0, 0.64, 0, 0.64, 0, -0.64, 0, -2.79753e-08, 3.0684, 0.980119, -16.3163)
+
+[node name="table" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(-3.40949e-08, 0, 0.78, 0, 0.78, 0, -0.78, 0, -3.40949e-08, 5.2055, 0.2758, -14.7734)
+
+[node name="table2" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(-3.40949e-08, 0, 0.78, 0, 0.78, 0, -0.78, 0, -3.40949e-08, 5.46726, 0.2758, -17.8842)
+
+[node name="table6" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(-3.40949e-08, 0, 0.78, 0, 0.78, 0, -0.78, 0, -3.40949e-08, -0.782236, 0.2758, 5.37719)
+
+[node name="table10" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(0.480216, 0, 0.614648, 0, 0.78, 0, -0.614648, 0, 0.480216, 1.13297, 0.272519, 5.37719)
+
+[node name="table7" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(-3.40949e-08, 0, 0.78, 0, 0.78, 0, -0.78, 0, -3.40949e-08, -2.45635, 0.2758, 2.03993)
+
+[node name="table8" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(-3.40949e-08, -0.688699, -0.366188, 0, -0.366188, 0.688699, -0.78, 3.0104e-08, 1.60066e-08, -1.52233, 0.57229, 2.03993)
+
+[node name="table9" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(0.682203, -0.333888, -0.177531, -3.20132e-08, -0.366188, 0.688699, -0.378151, -0.60235, -0.320275, -2.34991, 1.18847, 2.03993)
+
+[node name="table4" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(-3.40949e-08, 0, 0.78, 0, 0.78, 0, -0.78, 0, -3.40949e-08, 7.94186, 0.2758, -17.8842)
+
+[node name="table3" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(2.34694e-08, 2.47316e-08, 0.78, 0.565792, -0.536917, 0, 0.536917, 0.565792, -3.40949e-08, 6.54858, 0.87756, -14.808)
+
+[node name="table5" parent="swiatlo2" instance=ExtResource("3_8ocbs")]
+transform = Transform3D(6.2133e-09, 3.3524e-08, 0.78, 0.766939, -0.142144, 0, 0.142144, 0.766939, -3.40949e-08, 9.8997, 0.87756, -14.4974)
+
+[node name="taboret" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(0.49, 0, 0, 0, 0.436593, 0.222455, 0, -0.222455, 0.436593, 6.66551, 0.280292, -18.3495)
+
+[node name="taboret2" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(0.49, 0, 0, 0, 0.49, 0, 0, 0, 0.49, 6.27242, 0.247687, -17.6025)
+
+[node name="taboret3" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(0.49, 0, 0, 0, 0.49, 0, 0, 0, 0.49, 8.5422, 0.247687, -18.2873)
+
+[node name="taboret4" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(0.49, 0, 0, 0, 0.49, 0, 0, 0, 0.49, 8.29399, 0.247687, -17.5697)
+
+[node name="Node3D" parent="swiatlo2" instance=ExtResource("5_4qrr7")]
+transform = Transform3D(0.33, 0, 0, 0, 0.261807, 0.200891, 0, -0.200891, 0.261807, 10.1801, 0.240782, -18.0725)
+
+[node name="Node3D2" parent="swiatlo2" instance=ExtResource("5_4qrr7")]
+transform = Transform3D(0.198599, 0.263058, -0.0160893, 0, 0.020146, 0.329385, 0.26355, -0.198229, 0.0121242, 9.97356, 0.240782, -17.2158)
+
+[node name="Node3D3" parent="swiatlo2" instance=ExtResource("5_4qrr7")]
+transform = Transform3D(0.0705993, 0, -0.363202, 0, 0.37, 0, 0.363202, 0, 0.0705993, 0.064487, 0.215403, 5.61756)
+
+[node name="Node3D4" parent="swiatlo2" instance=ExtResource("5_4qrr7")]
+transform = Transform3D(0.220084, 0, -0.297427, 0, 0.37, 0, 0.297427, 0, 0.220084, 0.0724303, 0.215403, 4.68899)
+
+[node name="taboret5" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(0.635, 0, 0, 0, 0.635, 0, 0, 0, 0.635, 2.16414, 0.168646, 5.65361)
+
+[node name="taboret6" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(0.54, 0, 0, 0, 0.54, 0, 0, 0, 0.54, 2.19521, 0.219748, 4.96437)
+
+[node name="taboret7" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 4.29481, 0.166338, 1.82004)
+
+[node name="taboret8" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(1.1, 0, 0, 0, -0.0575695, 1.09849, 0, -1.09849, -0.0575695, 4.29481, 0.332557, 2.46941)
+
+[node name="taboret9" parent="swiatlo2" instance=ExtResource("4_p6qxv")]
+transform = Transform3D(1.1, 0, 0, 0, -0.661997, 0.878499, 0, -0.878499, -0.661997, 4.29481, 0.927868, 1.68679)
+
+[node name="Node3D5" parent="swiatlo2" instance=ExtResource("6_twm4c")]
+transform = Transform3D(0.605, 0, 0, 0, 0.605, 0, 0, 0, 0.605, 0.747676, 0.212646, -10.7243)
+
+[node name="Node3D9" parent="swiatlo2" instance=ExtResource("6_twm4c")]
+transform = Transform3D(0.605, 0, 0, 0, 0.605, 0, 0, 0, 0.605, 2.46344, 0.212646, -10.7243)
+
+[node name="Node3D10" parent="swiatlo2" instance=ExtResource("7_v3n18")]
+transform = Transform3D(-2.53526e-08, 0, 0.58, 0, 0.58, 0, -0.58, 0, -2.53526e-08, 0.838944, 1.4475, -13.7326)
+
+[node name="Node3D11" parent="swiatlo2" instance=ExtResource("7_v3n18")]
+transform = Transform3D(-2.53526e-08, 0, 0.58, 0, 0.58, 0, -0.58, 0, -2.53526e-08, 2.30281, 1.48355, -13.7326)
+
+[node name="Node3D7" parent="swiatlo2" instance=ExtResource("8_g103m")]
+transform = Transform3D(0.58, 0, 0, 0, 0.58, 0, 0, 0, 0.58, 2.24747, -0.0419945, -13.5222)
+
+[node name="Node3D8" parent="swiatlo2" instance=ExtResource("8_g103m")]
+transform = Transform3D(0.58, 0, 0, 0, 0.58, 0, 0, 0, 0.58, 0.753958, -0.0966624, -13.5222)
+
+[editable path="swiatlo2/swiatlo9"]

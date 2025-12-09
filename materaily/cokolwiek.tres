@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cwo535kttki34"]
+
+[ext_resource type="Texture2D" uid="uid://bkrktet3x3gpy" path="res://materaily/Texturelabs_Wood_227S.jpg" id="1_pkkcp"]
+
+[resource]
+albedo_color = Color(0.370469, 0.187401, 0.117249, 1)
+albedo_texture = ExtResource("1_pkkcp")
+uv1_scale = Vector3(2.288, 1.067, 2.575)
+uv1_offset = Vector3(1.23, -0.405, 0)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 21.8566
+uv1_world_triplanar = true

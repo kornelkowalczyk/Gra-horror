@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dprd06t8ci1sf"
+path="res://.godot/imported/menu theme.mp3-f253c6a152aacc4b47f130eb8857cd4d.mp3str"
+
+[deps]
+
+source_file="res://scenes/menu theme.mp3"
+dest_files=["res://.godot/imported/menu theme.mp3-f253c6a152aacc4b47f130eb8857cd4d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

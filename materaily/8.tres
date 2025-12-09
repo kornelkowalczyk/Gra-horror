@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://tt6vvq1m8thr"]
+
+[ext_resource type="Texture2D" uid="uid://d2w112pqpl3pn" path="res://materaily/kafelki.jpg" id="1_7d277"]
+
+[resource]
+albedo_color = Color(0.629675, 0.629675, 0.629675, 1)
+albedo_texture = ExtResource("1_7d277")
+metallic_specular = 1.0
+roughness = 0.3
+uv1_scale = Vector3(2.655, 2.64, 2.655)
+uv1_offset = Vector3(0.095, 0, 0)

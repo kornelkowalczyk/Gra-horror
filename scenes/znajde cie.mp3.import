@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2p8365ged1io"
+path="res://.godot/imported/znajde cie.mp3-739eb58547acc0b38a058ebf7d011805.mp3str"
+
+[deps]
+
+source_file="res://scenes/znajde cie.mp3"
+dest_files=["res://.godot/imported/znajde cie.mp3-739eb58547acc0b38a058ebf7d011805.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

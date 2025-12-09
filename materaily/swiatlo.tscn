@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://r0tph4hd6lty"]
+
+[ext_resource type="Material" uid="uid://bh0fnwu2min8f" path="res://materaily/siwatlow.tres" id="1_mrtu1"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_exc4f"]
+
+[node name="swiatlo" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_mrtu1")
+cast_shadow = 0
+mesh = SubResource("SphereMesh_exc4f")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.863913, 0)
+light_energy = 0.5
+light_volumetric_fog_energy = 5.0
+light_specular = 0.1
+light_bake_mode = 0
+shadow_bias = 0.28
+shadow_normal_bias = 3.323
+omni_range = 2.72
+omni_attenuation = 0.945

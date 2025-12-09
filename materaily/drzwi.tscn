@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://t4f326iote5f"]
+
+[ext_resource type="Material" uid="uid://cwo535kttki34" path="res://materaily/cokolwiek.tres" id="1_7vinj"]
+[ext_resource type="Material" uid="uid://drnlnvn1iq3m6" path="res://materaily/6.tres" id="2_gs4vx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tcwos"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fqp4p"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fl8ts"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0160638, -0.0143549, 0.00799727)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1.19, 0, 0, 0, 2.63, 0, 0, 0, 0.04, 0.0312725, 0.935006, 0)
+shape = SubResource("BoxShape3D_tcwos")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.235, 0, 0, 0, 2.57, 0, 0, 0, 0.06, 0.0394944, 0.951096, -0.0132304)
+material_override = ExtResource("1_7vinj")
+mesh = SubResource("BoxMesh_fqp4p")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.205, 0, 0, 0, -0.03, 0, 0, 0, 0.115, 0.423486, 1.06414, 0.0421595)
+material_override = ExtResource("2_gs4vx")
+mesh = SubResource("CapsuleMesh_fl8ts")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.205, 0, 0, 0, -0.03, 0, 0, 0, 0.115, 0.423486, 1.06414, -0.0777196)
+material_override = ExtResource("2_gs4vx")
+mesh = SubResource("CapsuleMesh_fl8ts")

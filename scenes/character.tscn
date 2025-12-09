@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://bygvwlq7bjuop"]
+
+[ext_resource type="Script" uid="uid://xbak67yx7sx2" path="res://character.gd" id="1_glpr6"]
+[ext_resource type="Texture2D" uid="uid://bb7fy6idfbu4n" path="res://scenes/bateriapusta.png" id="2_dp8ca"]
+[ext_resource type="Script" uid="uid://ca54tb7jo4odi" path="res://scenes/flashlight_bar.gd" id="3_0lw5n"]
+[ext_resource type="Texture2D" uid="uid://cxdn7g1l5yo7c" path="res://scenes/sprint0.png" id="4_2cgup"]
+[ext_resource type="Texture2D" uid="uid://bejbbok2oeqil" path="res://scenes/sprintpelny.png" id="5_a5ia6"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_agfs1"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_agfs1"]
+radius = 1.0
+height = 4.0
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_glpr6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 2, 0)
+mesh = SubResource("CapsuleMesh_agfs1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("CapsuleShape3D_agfs1")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head"]
+
+[node name="FlashlightBar" type="TextureProgressBar" parent="."]
+offset_left = 880.0
+offset_top = 3.0
+offset_right = 1122.0
+offset_bottom = 98.0
+nine_patch_stretch = true
+texture_under = ExtResource("2_dp8ca")
+texture_progress = ExtResource("2_dp8ca")
+tint_progress = Color(0, 1, 0, 1)
+script = ExtResource("3_0lw5n")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = 37.0
+offset_top = 90.0
+offset_right = 341.0
+offset_bottom = 1120.0
+nine_patch_stretch = true
+texture_under = ExtResource("4_2cgup")
+texture_progress = ExtResource("5_a5ia6")

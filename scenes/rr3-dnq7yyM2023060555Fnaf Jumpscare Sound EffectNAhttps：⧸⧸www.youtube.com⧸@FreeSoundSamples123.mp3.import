@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o7lxyekriie0"
+path="res://.godot/imported/rr3-dnq7yyM2023060555Fnaf Jumpscare Sound EffectNAhttps：⧸⧸www.youtube.com⧸@FreeSoundSamples123.mp3-7838782e174110dd336aafa799e94c15.mp3str"
+
+[deps]
+
+source_file="res://scenes/rr3-dnq7yyM2023060555Fnaf Jumpscare Sound EffectNAhttps：⧸⧸www.youtube.com⧸@FreeSoundSamples123.mp3"
+dest_files=["res://.godot/imported/rr3-dnq7yyM2023060555Fnaf Jumpscare Sound EffectNAhttps：⧸⧸www.youtube.com⧸@FreeSoundSamples123.mp3-7838782e174110dd336aafa799e94c15.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

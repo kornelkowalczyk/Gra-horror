@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5mt4otlw5agw"
+path="res://.godot/imported/juz stad nie wyjdziesz.mp3-981df2666140364bf4172c4c532da485.mp3str"
+
+[deps]
+
+source_file="res://scenes/juz stad nie wyjdziesz.mp3"
+dest_files=["res://.godot/imported/juz stad nie wyjdziesz.mp3-981df2666140364bf4172c4c532da485.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

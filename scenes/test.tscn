@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct4pd70auumen"]
+
+[ext_resource type="Material" uid="uid://b4qnhuskkfn54" path="res://materaily/7.tres" id="1_bl13t"]
+[ext_resource type="Material" uid="uid://b770mby1f3vrc" path="res://materaily/automatTXT.tres" id="2_iyx0m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ij1v8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_errlg"]
+
+[node name="automat" type="Node3D"]
+transform = Transform3D(0.745, 6.513e-08, 0, -6.513e-08, 0.745, 0, 0, 0, -0.865, 0, 0.824, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1.175, 0, 0, 0, 2.585, 0, 0, 0, 1.14, 0, -0.257662, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, -1.42109e-14, 0, 0, 1, 0, 0, 0, 1, 1.00589e-08, -0.0523004, 0)
+material_override = ExtResource("1_bl13t")
+mesh = SubResource("BoxMesh_ij1v8")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.891, 0, 0, 0, 0.891, 0, 0, 0, 0.815, 0, -0.0238817, -0.158098)
+material_override = ExtResource("2_iyx0m")
+mesh = SubResource("BoxMesh_ij1v8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.995, 0, 0, 0, 1.075, 0, 0, 0, 1.23, 0, -0.0246191, -0.00666981)
+shape = SubResource("BoxShape3D_errlg")

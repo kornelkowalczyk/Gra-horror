@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4am4xbtmnx25"]
+
+[ext_resource type="PackedScene" uid="uid://bmpcsitfdqdfn" path="res://materaily/table.tscn" id="1_6i8ud"]
+[ext_resource type="PackedScene" uid="uid://ycieybpu6qlt" path="res://materaily/taboret.tscn" id="2_w0t2t"]
+
+[node name="taborety i stoliki" type="Node3D"]
+
+[node name="table" parent="." instance=ExtResource("1_6i8ud")]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, 9.98516, 0.287083, -7.2248)
+
+[node name="table3" parent="." instance=ExtResource("1_6i8ud")]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, 9.98516, 0.287083, -5.85846)
+
+[node name="table2" parent="." instance=ExtResource("1_6i8ud")]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, 7.92246, 0.287083, -6.52927)
+
+[node name="table4" parent="." instance=ExtResource("1_6i8ud")]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, 7.92246, 0.287083, -5.0915)
+
+[node name="taboret" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 10.1764, 0.234484, -5.26664)
+
+[node name="taboret2" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 9.70985, 0.234484, -5.26664)
+
+[node name="taboret3" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 7.51816, 0.234484, -4.80877)
+
+[node name="taboret4" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 8.07237, 0.234484, -4.8825)
+
+[node name="taboret5" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 7.74535, 0.234484, -6.15301)
+
+[node name="taboret6" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 8.2142, 0.197549, -6.05905)
+
+[node name="taboret7" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 10.3762, 0.197549, -6.73347)
+
+[node name="taboret8" parent="." instance=ExtResource("2_w0t2t")]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 9.62252, 0.197549, -6.87393)

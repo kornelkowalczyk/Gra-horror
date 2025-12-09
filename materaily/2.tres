@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://02biigcy0bna"]
+
+[ext_resource type="Texture2D" uid="uid://dlnyvjir7y1vy" path="res://materaily/Texturelabs_Stone_166S.jpg" id="1_0ctp6"]
+
+[resource]
+albedo_color = Color(0.608715, 0.610614, 0.601978, 1)
+albedo_texture = ExtResource("1_0ctp6")

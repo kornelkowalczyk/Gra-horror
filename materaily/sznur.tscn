@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://7oegejhik7js"]
+
+[ext_resource type="Material" uid="uid://cwo535kttki34" path="res://materaily/cokolwiek.tres" id="1_0tjit"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5hv7u"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_v3j8q"]
+
+[node name="sznur" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.045, 0, 0, 0, 0.375, 0, 0, 0, 0.06, 0, 1.59332, 0)
+material_override = ExtResource("1_0tjit")
+mesh = SubResource("CylinderMesh_5hv7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-0.048, 0, 0, 0, 0.11, -1.38916e-08, 0, 1.66095e-08, 0.092, 0, 1.15252, 0)
+material_override = ExtResource("1_0tjit")
+mesh = SubResource("CylinderMesh_5hv7u")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.0148757, 0.110991, -0.0374607, -0.22944, 0.00837078, -5.69953e-10, 0.00601019, 0.0448433, 0.0927184, 0.0119221, 0.889912, 0)
+material_override = ExtResource("1_0tjit")
+mesh = SubResource("TorusMesh_v3j8q")

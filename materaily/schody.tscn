@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://f2sfsxf0m7qo"]
+
+[ext_resource type="Material" uid="uid://02biigcy0bna" path="res://materaily/2.tres" id="1_fmktu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ydcxw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fmktu"]
+size = Vector3(3.2, 1.05, 1)
+
+[node name="Schody" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.459335, 0.986295)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06735, -1.85876)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59726, -2.80188)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15065, -3.75455)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53996, -4.72604)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.91384, -5.43588)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3.135, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423737, -0.923703)
+material_override = ExtResource("1_fmktu")
+mesh = SubResource("BoxMesh_ydcxw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1.31108, -3.84176, 0, 0.65368, 7.70538, 0, 1.11961, -2.09956)
+shape = SubResource("BoxShape3D_fmktu")

@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw2ogntj0ysx6"]
+
+[ext_resource type="Material" uid="uid://bsj5qqrblwb7i" path="res://materaily/4.tres" id="1_lyn0n"]
+[ext_resource type="Material" uid="uid://cwo535kttki34" path="res://materaily/cokolwiek.tres" id="2_6ob6c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xi1qk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lyn0k"]
+
+[node name="tablica" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(3.63, 0, 0, 0, 2.105, 0, 0, 0, 0.16, 0.0354508, 0.405969, 0)
+shape = SubResource("BoxShape3D_xi1qk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.485, 0, 0, 0, 1.815, 0, 0, 0, 0.07, 0, 0.404389, 0)
+material_override = ExtResource("1_lyn0n")
+mesh = SubResource("BoxMesh_lyn0k")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.145, 0, 0, 0, 1.815, 0, 0, 0, 0.14, 1.73984, 0.404389, 0)
+material_override = ExtResource("2_6ob6c")
+mesh = SubResource("BoxMesh_lyn0k")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.145, 0, 0, 0, 1.815, 0, 0, 0, 0.14, -1.64989, 0.404389, 0)
+material_override = ExtResource("2_6ob6c")
+mesh = SubResource("BoxMesh_lyn0k")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.33815e-09, -3.555, 0, 0.145, -1.55394e-07, 0, 0, 0, 0.14, 0.0453598, 1.32223, 0)
+material_override = ExtResource("2_6ob6c")
+mesh = SubResource("BoxMesh_lyn0k")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.33815e-09, -3.555, 0, 0.145, -1.55394e-07, 0, 0, 0, 0.14, 0.0453598, -0.472145, 0)
+material_override = ExtResource("2_6ob6c")
+mesh = SubResource("BoxMesh_lyn0k")

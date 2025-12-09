@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://fl4ka5sfdq7x"]
+
+[ext_resource type="PackedScene" uid="uid://r0tph4hd6lty" path="res://materaily/swiatlo.tscn" id="1_5vg1p"]
+[ext_resource type="PackedScene" path="res://lazienka.tscn" id="2_pdjun"]
+
+[node name="swiatlo" type="Node3D"]
+
+[node name="swiatlo2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38532, -1.63877, 0)
+
+[node name="swiatlo15" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6327, 2.54505, 3.6562)
+
+[node name="swiatlo25" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6327, 2.54505, 3.6562)
+
+[node name="swiatlo2" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9597, 2.62719, -1.28824)
+
+[node name="swiatlo3" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29601, 2.62719, -0.943492)
+
+[node name="swiatlo8" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.89374, 2.62719, 4.00947)
+
+[node name="swiatlo9" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.89374, 2.62719, 13.0996)
+
+[node name="swiatlo10" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.45019, 2.62719, 13.0996)
+
+[node name="swiatlo11" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.85803, 2.62719, 13.0996)
+
+[node name="swiatlo12" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.85803, 2.62719, 9.85318)
+
+[node name="swiatlo13" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56136, 2.62719, 9.05971)
+
+[node name="swiatlo14" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.95272, 2.62719, 9.05971)
+
+[node name="swiatlo6" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90225, 2.62719, -7.48338)
+
+[node name="swiatlo7" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.16973, 2.62719, -6.50171)
+
+[node name="swiatlo16" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.10597, 2.62719, -11.6588)
+
+[node name="swiatlo17" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37667, 2.65939, -12.3407)
+
+[node name="swiatlo18" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65811, 2.62719, -16.2318)
+
+[node name="swiatlo23" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8929, 2.62719, -16.2318)
+
+[node name="swiatlo20" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7255, 2.62719, -7.23289)
+
+[node name="swiatlo21" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.71416, 2.62719, -8.33124)
+
+[node name="swiatlo22" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.43266, 2.62719, -1.47199)
+
+[node name="swiatlo19" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7281, 2.62719, -6.06914)
+
+[node name="swiatlo24" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7281, 2.62719, -10.7771)
+
+[node name="swiatlo5" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.96396, 2.62719, -0.943492)
+
+[node name="swiatlo" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02969, 2.54505, 3.64593)
+
+[node name="swiatlo4" parent="swiatlo2" instance=ExtResource("1_5vg1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.990998, 2.54505, 3.64593)
+
+[node name="lazienka" parent="swiatlo2" instance=ExtResource("2_pdjun")]

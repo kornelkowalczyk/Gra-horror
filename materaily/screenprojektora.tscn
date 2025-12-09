@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhs6krx1c7yf3"]
+
+[ext_resource type="Material" uid="uid://bsj5qqrblwb7i" path="res://materaily/4.tres" id="1_dp3dw"]
+[ext_resource type="Material" uid="uid://u4sjsywvo1ky" path="res://materaily/10.tres" id="1_f53x6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mgbmp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mgbmp"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_f53x6"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dp3dw"]
+
+[node name="Screenprojektora" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.20816, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(10.35, 0, 0, 0, 4.59, 0, 0, 0, 0.13, -0.103683, 0.0847616, 0)
+shape = SubResource("BoxShape3D_mgbmp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(10.35, 0, 0, 0, 4.17, 0, 0, 0, 0.015, -0.0845896, 0, 0)
+material_override = ExtResource("1_dp3dw")
+mesh = SubResource("BoxMesh_mgbmp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(9.825, 0, 0, 0, 3.992, 0, 0, 0, 0.014, -0.0845896, 0, 0.0150943)
+material_override = ExtResource("1_f53x6")
+mesh = SubResource("BoxMesh_mgbmp")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-1.94516e-08, -5.73, 0, 0.445, -2.50466e-07, 0, 0, 0, 0.565, -0.106042, 2.2721, 0.00270009)
+mesh = SubResource("CylinderMesh_f53x6")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.08, 0, 0, 0, 0.615, 0, 0, 0, 0.01, -0.106042, -2.68653, -0.000123471)
+mesh = SubResource("CylinderMesh_f53x6")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.135, 0, 0, 0, 0.16, 0, 0, 0, 0.165, -0.10577, -3.28108, 0)
+mesh = SubResource("SphereMesh_dp3dw")
+skeleton = NodePath("../..")
